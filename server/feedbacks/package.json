@@ -1,0 +1,22 @@
+{
+  "name": "feedbacks",
+  "version": "1.0.0",
+  "description": "Do the feedbacks api",
+  "keywords": [
+    "Feedbacks",
+    "api"
+  ],
+  "license": "ISC",
+  "author": "Trong Anh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "pg": "^8.17.2",
+    "pgtools": "^1.0.1"
+  }
+}
