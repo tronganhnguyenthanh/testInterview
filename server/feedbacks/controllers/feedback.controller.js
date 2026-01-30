@@ -11,7 +11,7 @@ const getFeedback = async (req, res) => {
   try{ 
    await client.query("BEGIN")
    const query = {
-    text:"SELECT * FROM feedback",
+    text:"SELECT * FROM feedback ORDER BY id ASC",
    }
    const pgSQL = await client.query(query)
    await client.query("COMMIT")
