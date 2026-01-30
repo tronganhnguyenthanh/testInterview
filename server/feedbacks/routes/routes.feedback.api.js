@@ -1,5 +1,7 @@
 const feedbackController = require("../controllers/feedback.controller")
 const express = require("express")
 const router = express.Router()
-const feedback_router_api = router.get("/feedback/list", feedbackController.getFeedback)
-module.exports = feedback_router_api 
+router.get("/feedback/list", feedbackController.getFeedback)
+router.patch("/feedback/edit/:id", feedbackController.updateAIDraft)
+router.get("/feedback/detail/:id", feedbackController.getFeedbackById)
+module.exports = router 
