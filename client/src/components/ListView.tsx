@@ -8,6 +8,9 @@ export default function ListView() {
   let [data, setData] = useState<feedback[]>([])
   const [toggleTable, setToggleTable] = useState(false)
   const router = useRouter()
+  useEffect(() => {
+   getData()
+  },[])
   const getData = async () => {
    const urgency = await customUrgency()
    setData(urgency)
